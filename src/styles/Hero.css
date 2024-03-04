@@ -1,0 +1,31 @@
+.hero {
+  height: 100vh;
+  display: flex;
+}
+
+.hero-right {
+  background-color: blueviolet;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right button {
+
+}
+
+.hero-left {
+  background-color: aquamarine;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 56px;
+}
+
+.hero-subtitle {
+  font-size: 36px;
+}
