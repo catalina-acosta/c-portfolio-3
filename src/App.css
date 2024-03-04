@@ -37,6 +37,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  transform: scale(1.5x);
 }
 
 img {
@@ -54,4 +55,8 @@ button {
   border-radius: 8px;
   border: solid 2px;
   box-shadow: 5px 5px;
+}
+
+button:hover {
+  transform: scale(2);
 }
