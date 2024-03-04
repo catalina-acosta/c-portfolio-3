@@ -12,7 +12,7 @@ function NavBar() {
           <li><HashLink to='#about'>about</HashLink></li>
           <li><HashLink to='#contact'>contact</HashLink></li>
         </ul>
-        <HashLink to='#home'><img src={turtle} alt="turtle" className="logo"/></HashLink>
+        <span id='logo'><HashLink to='#home'> C.</HashLink></span>
       </Router>
     </div>
   );
