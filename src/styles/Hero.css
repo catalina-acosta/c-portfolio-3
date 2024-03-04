@@ -8,10 +8,11 @@
   width: 30vw;
   display: flex;
   justify-content: center;
+  border-left: 2px solid;
 }
 
 .hero-right button {
-
+  transform: translateX(-15vw) translateY(65vh);
 }
 
 .hero-left {
@@ -23,7 +24,9 @@
 }
 
 .hero-title {
-  font-size: 56px;
+  font-size: 76px;
+  border-top: 2px solid;
+  padding-top: 2px;
 }
 
 .hero-subtitle {
