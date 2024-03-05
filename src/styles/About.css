@@ -1,4 +1,7 @@
 .about {
   height: 100vh;
   background-color: #FE8E86;
+  display: flex;
+  align-items: center;
+  z-index: 1;
 }
