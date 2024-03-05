@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: url("../src/assets/svg/arrow-pointer-solid.svg"), auto;
 }
 
 html {
@@ -38,6 +39,7 @@ a {
 a:hover {
   text-decoration: none;
   transform: scale(1.5x);
+  cursor: url("./assets/svg/hand-pointer-solid.svg"), auto;
 }
 
 img {
@@ -47,9 +49,9 @@ img {
 
 button {
   height: fit-content;
-  padding: 6px;
+  padding: 8px;
   font-family: 'Lato', sans-serif;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 900;
   color: #3F4750;
   border-radius: 8px;

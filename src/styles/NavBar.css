@@ -22,7 +22,7 @@
   color: #3F4750;
 }
 
-.navbar span {
-  width: 30px;
-  font-family: 'Lato, sans-serif';
+#logo {
+  font-size: 30px;
 }
+
