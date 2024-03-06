@@ -1,3 +1,15 @@
+:root {
+  --font-color1: #3F4750;
+  --font-color2: #F8F1F8;
+  --accent-color: #B892FF;
+  --bg-color: #F8F1F8;
+  --bg-color1: #5FE7C5;
+  --bg-color2: #B892FF;
+  --bg-color3: #FFF275;
+  --bg-color4: #FE8E86;
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +19,14 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 75px;
 }
 
 body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #57535b !important;
-  color: #3F4750 !important;
+  background-color: var(--bg-color) !important;
+  color: var(--font-color1) !important;
   font-family: 'Josefin Sans', sans-serif !important;
 }
 
@@ -32,8 +43,12 @@ p, a, li, button, ul {
   text-decoration: none;
 }
 
+p {
+  font-family: 'Lato', sans-serif;
+}
+
 a {
-  color: #3F4750;
+  color: var(--font-color1);
 }
 
 a:hover {

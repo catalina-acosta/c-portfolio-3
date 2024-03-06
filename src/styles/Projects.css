@@ -1,6 +1,6 @@
 .projects {
   height: 100vh;
-  background-color: #FFF275;
+  background-color: var(--bg-color3);
   display: flex;
   align-items: center;
   justify-content: center;
