@@ -19,10 +19,9 @@
 
 .links li {
   font-size: 24px;
-  color: #3F4750;
+  color: var(--font-color1);
 }
 
 #logo {
   font-size: 30px;
 }
-

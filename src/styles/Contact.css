@@ -1,4 +1,4 @@
 .contact {
   height: 100vh;
-  background-color: #5FE7C5;
+  background-color: var(--bg-color1);
 }
