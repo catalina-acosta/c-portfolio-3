@@ -23,5 +23,9 @@
 }
 
 #logo {
-  font-size: 30px;
+  font-size: 40px;
+  border: 3px solid var(--font-color1);
+  border-radius: 8px;
+  padding: 0 8px;
+
 }

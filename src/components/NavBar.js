@@ -12,7 +12,7 @@ function NavBar() {
           <li><HashLink to='#contact'>contact</HashLink></li>
         </ul>
         <div className="logo-container">
-          <HashLink to='#home' id="logo"> C.</HashLink>
+          <HashLink to='#home' id="logo"> c.</HashLink>
         </div>
       </Router>
     </div>
