@@ -2,6 +2,47 @@
   height: 100vh;
   background-color: var(--bg-color4);
   display: flex;
+}
+
+.about-container {
+  display: flex;
   align-items: center;
-  z-index: 1;
+  margin: 10vw;
+  gap: 5vw;
+}
+
+.img-container {
+  max-width: 25vw;
+  border: 3px solid var(--font-color1);
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  box-shadow: 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-title {
+  background-color: var(--bg-color);
+  border: 2px solid var(--font-color1);
+  border-radius: 8px;
+  box-shadow: 5px 5px;
+  width: 10vw;
+  font-size: 24px;
+  text-align: center;
+  padding: 2vh 0;
+  transform: translateX(2vw) translateY(3vh);
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.about-text h1 {
+  font-size: 68px;
+}
+
+.about-text p {
+  font-size: 18px;
 }
