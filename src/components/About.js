@@ -2,16 +2,16 @@ import React from 'react'
 import "../styles/About.css"
 import aboutImg from '../assets/img/about-pic.jpg'
 
-
 function About() {
   return (
     <div className="about" id='about'>
       <div className="img-container">
+        <div className="img-title">this is me</div>
         <img src={aboutImg} alt="Catalina" />
       </div>
       <div className="about-text">
         <h1>
-          about myself
+          about.
         </h1>
         <p>I am originally from Bogotá, Colombia, but I have been living in Europe for the past eight years. After spending three years in Barcelona, I moved to Berlin. I studied Fashion Design in Bogotá and earned my Masters in Fashion Management in Barcelona. Since then, I have worked in the Fashion industry as an Account Manager and, most recently, as a Product Manager in Berlin.</p>
         <p>During the Covid pandemic, I found myself with more free time than expected, which sparked my interest in web development and programming. To my surprise, I discovered that not only could I program (something I had thought was not an option for me for years), but it was also fun and creative.</p>
