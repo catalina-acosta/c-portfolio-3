@@ -5,9 +5,8 @@ import ContactForm from '../helpers/ContactForm'
 function Contact() {
   return (
     <div className='contact' id='contact'>
-      <h1>Get in touch!</h1>
       <div className='contact-container'>
-        <img src='' alt=''/>
+        <h1 className='contact-title'>let's chat!</h1>
         <ContactForm/>
       </div>
     </div>

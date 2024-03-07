@@ -14,10 +14,7 @@ function About() {
         </div>
         <div className="about-text">
           <h1>about.</h1>
-          <p>I am originally from Bogotá, Colombia, but I have been living in Europe for the past eight years. After spending three years in Barcelona, I moved to Berlin. I studied Fashion Design in Bogotá and earned my Masters in Fashion Management in Barcelona. Since then, I have worked in the Fashion industry as an Account Manager and, most recently, as a Product Manager in Berlin.</p>
-          <p>During the Covid pandemic, I found myself with more free time than expected, which sparked my interest in web development and programming. To my surprise, I discovered that not only could I program (something I had thought was not an option for me for years), but it was also fun and creative.</p>
-          <p>In the autumn of 2022, I took the leap and enrolled in a 9-week intensive web development bootcamp at Le Wagon in Berlin. Since then, I have been convinced that I want to continue working as a developer and apply all my skills to it.</p>
-          <p>In addition to web development, I enjoy practicing yoga 🧘, baking 🧁, and dancing 🪩.</p>
+          <p>Originally from Bogotá, Colombia, I have spent the last eight years living in Europe, with stints in Barcelona and currently Berlin. My academic background includes a degree in Fashion Design from Bogotá and a Masters in Fashion Management from Barcelona. Professionally, I've navigated the Fashion industry, transitioning from Account Manager roles to Product Management in Berlin. However, the Covid pandemic afforded me unexpected free time, igniting a passion for web development and programming. Enrolling in a 9-week intensive web development bootcamp at Le Wagon in Berlin in 2022 was transformative, solidifying my desire to pursue a career in development. Alongside coding, I find joy in practicing yoga, baking, and dancing.</p>
         </div>
       </div>
     </div>
