@@ -1,4 +1,23 @@
 .contact {
   height: 100vh;
   background-color: var(--bg-color1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid var(--font-color1);
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  box-shadow: 8px 8px;
+}
+
+.contact-title {
+  
 }
