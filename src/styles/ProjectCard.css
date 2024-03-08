@@ -1,0 +1,43 @@
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+  margin: top;
+  gap: 3vh;
+}
+
+.graphic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 20vh;
+  border: solid 3px var(--font-color1);
+  background-color: var(--bg-color);
+  border-radius: 8px;
+}
+
+.dots-nav {
+  display: flex;
+  border-bottom: 3px solid var(--font-color1);
+  width: -webkit-fill-available;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: var(--font-color1);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.project-img {
+  width: 15vw;
+}
