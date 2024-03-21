@@ -9,17 +9,9 @@ function Projects() {
     title: project.name,
   }));
 
-  console.log(slides);
-
-  const containerStyles = {
-    width: "500px",
-    height: "280px",
-    margin: "0 auto"
-  }
   return (
     <div className="projects" id='projects'>
-      <h1>Image Slider</h1>
-      <div style={containerStyles}>
+      <div className='project-container'>
         <ImageSlider slides={slides}/>
       </div>
 
