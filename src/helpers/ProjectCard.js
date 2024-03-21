@@ -1,9 +1,12 @@
-import React from 'react'
-import '../styles/ProjectCard.css'
+import React from 'react';
+import '../styles/ProjectCard.css';
 
-function ProjectCard({img, name, description, techStack}) {
+function ProjectCard({ img, name, description, techStack, index }) {
+  const isEven = index % 2 === 0;
+  const alignClass = isEven ? 'align-left' : 'align-right';
+
   return (
-    <div className="project-container">
+    <div className={`project-container ${alignClass}`}>
       <div className="project-left">
         <div className="graphic">
           <div className="dots-nav">
@@ -17,14 +20,15 @@ function ProjectCard({img, name, description, techStack}) {
             <img src={img} alt="" className='project-img'/>
           </div>
         </div>
-        <div className="project-title">{name}</div>
       </div>
+      <div className="overlay"></div>
       <div className="project-info">
-        <p className="description">{description}</p>
-
+        <div className="project-title">{name}</div>
+        <div className="project-description">{description}</div>
+        <div className="project-tech-stack">{techStack}</div>
       </div>
     </div>
-  )
+  );
 }
 
-export default ProjectCard
+export default ProjectCard;

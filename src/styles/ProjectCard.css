@@ -1,10 +1,21 @@
+/*container styling */
 .project-container {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 30vh;
-  margin: top;
+  margin: 0 15vw;
   gap: 3vh;
+}
+
+.align-left {
+  justify-content: flex-start;
+  transform: translate(15vw, 5vh);
+}
+
+.align-right {
+  justify-content: flex-end;
+
 }
 
 .graphic {
@@ -38,6 +49,12 @@
   display: inline-block;
 }
 
+/*image styling*/
 .project-img {
   width: 15vw;
+}
+
+
+.project-info {
+  max-width: 15vw;
 }

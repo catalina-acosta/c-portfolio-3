@@ -1,19 +1,30 @@
-import React from 'react'
-import "../styles/Projects.css"
-import ProjectCard from '../helpers/ProjectCard'
+import React from 'react';
+import '../styles/Projects.css';
 import { ProjectList } from '../helpers/ProjectList'
+import ImageSlider from '../helpers/ImageSlider'
 
 function Projects() {
+  const slides = ProjectList.map(project => ({
+    image: project.img,
+    title: project.name,
+  }));
+
+  console.log(slides);
+
+  const containerStyles = {
+    width: "500px",
+    height: "280px",
+    margin: "0 auto"
+  }
   return (
     <div className="projects" id='projects'>
-        <h1>{/* eslint-disable-next-line */}</h1>
-        <div className='project-list'>
-          {ProjectList.map((project, idx) => {
-            return <ProjectCard id={idx} name={project.name} img={project.img} description={project.description} techStack={project.techStack}/>;
-          })}
-        </div>
+      <h1>Image Slider</h1>
+      <div style={containerStyles}>
+        <ImageSlider slides={slides}/>
+      </div>
+
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;
