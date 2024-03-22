@@ -51,7 +51,7 @@ a {
   color: var(--font-color1);
 }
 
-a:hover {
+a:hover, button:hover {
   text-decoration: none;
   transform: scale(1.5x);
   cursor: url("./assets/svg/hand-pointer-solid.svg"), auto;
@@ -72,7 +72,7 @@ button {
   font-weight: 900;
   color: #3F4750;
   border-radius: 8px;
-  border: solid 2px;
+  border: solid 3px;
   box-shadow: 5px 5px;
 }
 
