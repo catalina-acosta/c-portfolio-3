@@ -10,12 +10,10 @@
 
 .projects-title {
   font-size: 68px;
-  padding-bottom: 2vh;
+  padding-bottom: 5vh;
   padding-top: 15vh;
 }
 
 .project-container {
   padding-top: 1vh;
-  transform: translateX(-2vw);
 }
-
