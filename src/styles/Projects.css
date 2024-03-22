@@ -1,14 +1,21 @@
 .projects {
   min-height: 100vh;
   background-color: var(--bg-color3);
-}
-
-.project-list {
-  padding-top: 20vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-top: 4vh;
+}
+
+
+.projects-title {
+  font-size: 68px;
+  padding-bottom: 2vh;
+  padding-top: 15vh;
 }
 
 .project-container {
-
+  padding-top: 1vh;
+  transform: translateX(-2vw);
 }
+

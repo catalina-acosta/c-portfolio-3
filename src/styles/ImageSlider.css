@@ -6,6 +6,12 @@
 .slide-container {
   display: flex;
   justify-content: center;
+  transition: transform 0.3s ease-in-out; /* Add transition */
+}
+
+.slide-container:hover {
+  scale: 1.1;
+  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
 }
 
 .slide {
@@ -18,10 +24,10 @@
 .left-arrow {
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(-7vw, -4vh);
   left: 32px;
   font-size: 45px;
-  color: #fff;
+  color: var(--font-color1);
   z-index: 1;
   cursor: pointer;
 }
@@ -29,10 +35,10 @@
 .right-arrow {
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(7vw, -4vh);
   right: 32px;
   font-size: 45px;
-  color: #fff;
+  color: var(--font-color1);
   z-index: 1;
   cursor: pointer;
 }
@@ -71,4 +77,36 @@
 /*image styling*/
 .project-img {
   width: 15vw;
+}
+
+.project-title, .description, .tech-stack, .label {
+  max-width: 15vw;
+  animation: slideIn 0.5s ease-in-out forwards;
+  opacity: 0;
+
+
+}
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translate(0, -50vh);
+  }
+  to {
+    opacity: 1;
+    transform: translate(20vw, -50vh);
+  }
+}
+
+.project-title {
+  animation-delay: 0.1s; /* Adjust delay for each element */
+}
+
+.description {
+  animation-delay: 0.5s;
+}
+
+.tech-stack {
+  animation-delay: 0.8s;
 }

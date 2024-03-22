@@ -7,14 +7,17 @@ function Projects() {
   const slides = ProjectList.map(project => ({
     image: project.img,
     title: project.name,
+    description: project.description,
+    techStack: project.techStack,
+    label: project.label
   }));
 
   return (
     <div className="projects" id='projects'>
+      <h1 className="projects-title">projects.</h1>
       <div className='project-container'>
         <ImageSlider slides={slides}/>
       </div>
-
     </div>
   );
 }

@@ -57,6 +57,9 @@ a:hover {
   cursor: url("./assets/svg/hand-pointer-solid.svg"), auto;
 }
 
+button:hover {
+  cursor: url("./assets/svg/hand-pointer-solid.svg"), auto;
+}
 img {
   height: auto;
 }

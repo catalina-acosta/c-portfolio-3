@@ -7,24 +7,28 @@ export const ProjectList = [
     name: "jeronimo escobar design",
     description: "website for the colombian designer and architect Jeronimo Escobar",
     techStack: ["React Js", "JavaScript", "CSS", "HTML"],
-    img: jescobarImg
+    img: jescobarImg,
+    label: "freelance work"
   },
   {
     name: "Find My Midwife",
     description: "web App where mom's and midwifes find each other",
     techStack: ["Ruby on Rails", "Ruby", "PostgreSQL", "CSS", "HTML"],
-    img: fmmwImg
+    img: fmmwImg,
+    label: ""
   },
   {
     name: "personal porfolio V.2.",
     description: "the newest version of my personal porfolio",
     techStack: ["React Js", "JavaScript", "CSS", "HTML"],
-    img: cPorfolio1
+    img: cPorfolio1,
+    label: ""
   },
   {
     name: "personal porfolio V.1.",
     description: "the first version of my personal porfolio",
     techStack: ["CSS", "HTML"],
-    img: cPorfolio1
+    img: cPorfolio1,
+    label: ""
   },
 ];
