@@ -1,0 +1,50 @@
+.footer {
+  height: 54px;
+  background: var(--bg-color2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5vh 2vw;
+}
+
+.socialmedia a {
+  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
+}
+
+.socialMedia svg {
+  color: var(--font-color2);
+  margin: 20px;
+  font-size: 70px;
+  cursor: pointer;
+}
+
+.footer p {
+  color: var(--font-color1);
+  margin: 20px;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer svg {
+    font-size: 36px;
+  }
+
+  .footer {
+    height: 80px;
+    background: var(--background-color);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+}
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 400px) {
+
+
+}

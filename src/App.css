@@ -51,15 +51,17 @@ a {
   color: var(--font-color1);
 }
 
-a:hover, button:hover {
+a:hover {
+  cursor: url("./assets/svg/hand-pointer-solid.svg"), auto;
   text-decoration: none;
-  transform: scale(1.5x);
+}
+
+
+
+#btn-submit:hover {
   cursor: url("./assets/svg/hand-pointer-solid.svg"), auto;
 }
 
-button:hover {
-  cursor: url("./assets/svg/hand-pointer-solid.svg"), auto;
-}
 img {
   height: auto;
 }
@@ -77,5 +79,5 @@ button {
 }
 
 button:hover {
-  transform: scale(2);
+  transform: scale(1.1);
 }
