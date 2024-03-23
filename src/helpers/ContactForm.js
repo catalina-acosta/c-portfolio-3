@@ -71,7 +71,7 @@ const ContactForm = () => {
         onChange={(e) => setMessage(e.target.value)}
         required
       />
-      <input className="openModalBtn" type="submit" value="Send" />
+      <input id='btn-submit'className="openModalBtn" type="submit" value="Send" />
       {openModal && <Modal closeModal={() => setOpenModal(false)} />}
     </form>
   );

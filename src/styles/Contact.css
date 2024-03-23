@@ -14,10 +14,12 @@
   border: 3px solid var(--font-color1);
   border-radius: 8px;
   padding: 2rem;
+  margin-top: 5rem;
   background-color: var(--bg-color);
-  box-shadow: 8px 8px;
 }
 
-.contact-title {
-  
+.button-container {
+  padding-top: 5vh;
+  display: flex;
+  gap: 1rem;
 }
