@@ -59,10 +59,10 @@
   left: 0;
   width: 100vw;
   height: 88vh;
-  background-color: var(--bg-color2); /* Adjust as needed */
-  border-top: 3px solid var(--font-color1); /* Adjust as needed */
-  padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust as needed */
+  background-color: var(--bg-color2);
+  border-top: 3px solid var(--font-color1);
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
