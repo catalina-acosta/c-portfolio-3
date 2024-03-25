@@ -8,7 +8,7 @@
   width: 30vw;
   display: flex;
   justify-content: center;
-  border-left: 2px solid;
+  border-left: 5px solid var(--font-color1);
 }
 
 .download-cv {

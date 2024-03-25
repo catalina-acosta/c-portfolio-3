@@ -18,11 +18,10 @@
   height: 100%;
   border-radius: 10px;
   background-position: center;
-  border: 3px solid;
 }
 
 .left-arrow {
-  position: absolute; 
+  position: absolute;
   top: 50%;
   transform: translate(-7vw, 10vh);
   left: 32px;
@@ -48,7 +47,7 @@
   flex-direction: column;
   align-items: center;
   min-height: 20vh;
-  border: solid 3px var(--font-color1);
+  border: solid 6px var(--font-color1);
   background-color: var(--bg-color);
   border-radius: 8px;
 }
@@ -85,10 +84,27 @@
   gap: 2rem;
 }
 
-.project-title, .description, .tech-stack, .label {
+.project-title, .description, .tech-stack, .label, .project-links {
   max-width: 15vw;
   animation: slideIn 0.5s ease-in-out forwards;
   opacity: 0;
+}
+
+.project-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.project-links p {
+  border: 3px solid var(--font-color1);
+  padding: 5px;
+  border-radius: 8px;
+  width: 4rem;
+  text-align: center;
+  background-color: var(--bg-color);
+  font-weight: bold;
+  box-shadow: 5px 5px;
 }
 
 @keyframes slideIn {
@@ -116,4 +132,15 @@
 
 .label {
   animation-delay: 1s;
+}
+
+.nav-dots {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-dot {
+  font-size: 24px;
+  color: var(--font-color1);
 }

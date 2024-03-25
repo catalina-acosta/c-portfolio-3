@@ -18,6 +18,10 @@ function ImageSlider(props) {
     setCurrentIndex(newIndex);
   };
 
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  }
+
   return (
     <div className="slider-container">
       <div className="slider">
@@ -45,15 +49,22 @@ function ImageSlider(props) {
             </div>
           </div>
         </div>
+        <div className="nav-dots">
+          {slides.map((slide, slideIndex) => (
+            <div className="nav-dot" key={slideIndex} onClick={() => goToSlide(slideIndex)}>●</div>
+          ))}
+        </div>
       </div>
-      {isHovered && (
-        <div className='project-info'>
-          <div className='project-title'><h1>{slides[currentIndex].title}</h1></div>
-            <div className="description"><p>{slides[currentIndex].description}</p></div>
-            <div className="tech-stack"><p>{slides[currentIndex].techStack}</p></div>
-            <div className="label"><p>{slides[currentIndex].label}</p></div>
-          </div>
-        )}
+      <div className='project-info'>
+        <div className='project-title'><h1>{slides[currentIndex].title}</h1></div>
+        <div className="description"><p>{slides[currentIndex].description}</p></div>
+        <div className="tech-stack"><p>{slides[currentIndex].techStack}</p></div>
+        <div className="label"><p>{slides[currentIndex].label}</p></div>
+        <div className="project-links">
+          <a><p>git</p></a>
+          <p>visit</p>
+        </div>
+      </div>
     </div>
   );
 }
