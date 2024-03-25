@@ -9,11 +9,6 @@
   transition: transform 0.3s ease-in-out; /* Add transition */
 }
 
-.slide-container:hover {
-  scale: 1.1;
-  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
-}
-
 .slide {
   height: 100%;
   border-radius: 10px;
@@ -28,7 +23,7 @@
   font-size: 45px;
   color: var(--font-color1);
   z-index: 1;
-  cursor: pointer;
+  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
 }
 
 .right-arrow {
@@ -39,7 +34,7 @@
   font-size: 45px;
   color: var(--font-color1);
   z-index: 1;
-  cursor: pointer;
+  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
 }
 
 .graphic {
@@ -52,7 +47,7 @@
   border-radius: 8px;
 }
 
-.dots-nav {
+.top-container {
   display: flex;
   border-bottom: 3px solid var(--font-color1);
   width: -webkit-fill-available;
@@ -60,7 +55,7 @@
   padding: 5px;
 }
 
-.dots {
+.graphic-points {
   display: flex;
   gap: 0.5rem;
 }
@@ -71,6 +66,9 @@
   background-color: var(--font-color1);
   border-radius: 50%;
   display: inline-block;
+}
+.nav-dot.current {
+  color: var(--bg-color);
 }
 
 /*image styling*/
@@ -93,7 +91,7 @@
 .project-links {
   display: flex;
   gap: 2rem;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .project-links p {
@@ -105,6 +103,7 @@
   background-color: var(--bg-color);
   font-weight: bold;
   box-shadow: 5px 5px;
+  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
 }
 
 @keyframes slideIn {
@@ -143,4 +142,5 @@
 .nav-dot {
   font-size: 24px;
   color: var(--font-color1);
+  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
 }

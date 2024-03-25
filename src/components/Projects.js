@@ -9,7 +9,9 @@ function Projects() {
     title: project.name,
     description: project.description,
     techStack: project.techStack,
-    label: project.label
+    label: project.label,
+    link: project.link,
+    git: project.git
   }));
 
   return (
