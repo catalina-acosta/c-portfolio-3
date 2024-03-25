@@ -16,7 +16,6 @@
   border: 3px solid var(--font-color1);
   background-color: var(--bg-color);
   border-radius: 5px;
-  box-shadow: 10px 10px;
   display: flex;
   flex-direction: column;
 }
