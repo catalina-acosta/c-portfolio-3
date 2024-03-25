@@ -22,10 +22,61 @@
   color: var(--font-color1);
 }
 
+.links a {
+  line-height: 1.5;
+  transition: line-height 0.3s ease, transform 0.3s ease;
+}
+/* NavBar.css */
+.links a:hover {
+  line-height: 1.8; /* Adjust as needed */
+  text-decoration: underline;
+  transform: translateY(-2px); /* Move the link 2px upward */
+}
+
+
 #logo {
   font-size: 40px;
   border: 3px solid var(--font-color1);
   border-radius: 8px;
-  padding: 0 8px;
+  padding: 0 0.5rem;
+  margin-right: 1rem;
+}
 
+
+/* Menu Icon */
+.menu-icon {
+  display: none; /* Hide by default */
+  cursor: pointer;
+  font-size: 40px;
+}
+
+/* Expanded Menu */
+.links.expanded {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  height: 88vh;
+  background-color: var(--bg-color2); /* Adjust as needed */
+  border-top: 3px solid var(--font-color1); /* Adjust as needed */
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background-color: var(--bg-color2);
+    border-bottom: 3px solid var(--font-color1);
+    height: 12vh;
+    padding: 2vh 8vw;
+  }
+  .menu-icon {
+    display: block; /* Show only on smaller devices */
+  }
+
+  .links {
+    display: none; /* Hide by default on smaller devices */
+  }
 }
