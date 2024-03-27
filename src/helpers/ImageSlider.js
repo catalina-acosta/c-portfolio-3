@@ -31,7 +31,7 @@ function ImageSlider(props) {
         <div className='right-arrow' onClick={goToNext}>
           ❱
         </div>
-        <div className={`slide-container ${isHovered ? 'hovered' : ''}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+        <div className="slide-container">
           <div className="slide">
             <div className="project-left">
               <div className="graphic">
@@ -43,6 +43,7 @@ function ImageSlider(props) {
                   </div>
                 </div>
                 <div className="project-img-container">
+                  {window.innerWidth <= 768 && <div className="overlay"></div>}
                   <img src={slides[currentIndex].image} alt="" className='project-img'/>
                 </div>
               </div>

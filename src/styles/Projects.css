@@ -4,16 +4,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 4vh;
+  justify-content: center;
 }
 
 
 .projects-title {
   font-size: 68px;
-  padding-bottom: 5vh;
-  padding-top: 15vh;
+  padding-bottom: 1vh;
+  padding-top: 14vh;
 }
 
 .project-container {
   padding-top: 1vh;
+}
+
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 54px;
+  }
 }

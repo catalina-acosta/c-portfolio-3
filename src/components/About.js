@@ -7,6 +7,7 @@ function About() {
     <div className="about" id='about'>
       <div className="about-container">
         <div className="about-left">
+          <h1 className='title-small-d'>about.</h1>
           <div className="img-title">this is me</div>
           <div className="img-container">
             <img src={aboutImg} alt="Catalina" />
@@ -14,7 +15,9 @@ function About() {
         </div>
         <div className="about-text">
           <h1>about.</h1>
-          <p>Originally from Bogotá, Colombia, I have spent the last eight years living in Europe, with stints in Barcelona and currently Berlin. My academic background includes a degree in Fashion Design from Bogotá and a Masters in Fashion Management from Barcelona. Professionally, I've navigated the Fashion industry, transitioning from Account Manager roles to Product Management in Berlin. However, the Covid pandemic afforded me unexpected free time, igniting a passion for web development and programming. Enrolling in a 9-week intensive web development bootcamp at Le Wagon in Berlin in 2022 was transformative, solidifying my desire to pursue a career in development. Alongside coding, I find joy in practicing yoga, baking, and dancing.</p>
+          <p>Hello 👋 I'm Catalina,</p>
+          <p>
+            <span>frontend developer</span> passionate about crafting elegant solutions to complex problems. With a background in fashion design and product management, I recently made the exciting transition into coding following completion of a bootcamp at Le Wagon in Berlin. After gathering experience in freelance work, I am now eager to embark on fresh professional endeavors. Don't hesitate to get in touch using the form below!</p>
         </div>
       </div>
     </div>
