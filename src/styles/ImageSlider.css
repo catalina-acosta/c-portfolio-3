@@ -1,3 +1,10 @@
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative
+}
+
 .slider {
   height: 100%;
   position: relative;
@@ -7,11 +14,6 @@
   display: flex;
   justify-content: center;
   transition: transform 0.3s ease-in-out; /* Add transition */
-}
-
-.slide-container:hover {
-  scale: 1.1;
-  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
 }
 
 .slide {
@@ -28,7 +30,7 @@
   font-size: 45px;
   color: var(--font-color1);
   z-index: 1;
-  cursor: pointer;
+  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
 }
 
 .right-arrow {
@@ -39,7 +41,7 @@
   font-size: 45px;
   color: var(--font-color1);
   z-index: 1;
-  cursor: pointer;
+  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
 }
 
 .graphic {
@@ -52,7 +54,7 @@
   border-radius: 8px;
 }
 
-.dots-nav {
+.top-container {
   display: flex;
   border-bottom: 3px solid var(--font-color1);
   width: -webkit-fill-available;
@@ -60,7 +62,7 @@
   padding: 5px;
 }
 
-.dots {
+.graphic-points {
   display: flex;
   gap: 0.5rem;
 }
@@ -72,16 +74,25 @@
   border-radius: 50%;
   display: inline-block;
 }
+.nav-dot.current {
+  color: var(--bg-color);
+}
 
 /*image styling*/
 .project-img {
   width: 15vw;
 }
 
+.overlay {
+  background-color: var(--font-color1);
+}
+
 .project-info {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
+  transform: translate(0, 0);
 }
 
 .project-title, .description, .tech-stack, .label, .project-links {
@@ -93,7 +104,8 @@
 .project-links {
   display: flex;
   gap: 2rem;
-  justify-content: space-around;
+  justify-content: space-between;
+  animation-delay: 2s;
 }
 
 .project-links p {
@@ -105,16 +117,17 @@
   background-color: var(--bg-color);
   font-weight: bold;
   box-shadow: 5px 5px;
+  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
 }
 
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translate(0, -50vh);
+    transform: translate(0, 0);
   }
   to {
     opacity: 1;
-    transform: translate(25vw, -50vh);
+    transform: translate(25vw, 0);
   }
 }
 
@@ -127,11 +140,11 @@
 }
 
 .tech-stack {
-  animation-delay: 0.8s;
+  animation-delay: 1s;
 }
 
 .label {
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 
 .nav-dots {
@@ -143,4 +156,102 @@
 .nav-dot {
   font-size: 24px;
   color: var(--font-color1);
+  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
+}
+
+@media (max-width: 440px) {
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 94%;
+    background-color: var(--bg-color);
+    opacity: 0.8;
+    border: 5px solid var(--font-color1);
+    border-radius: 5px;
+  }
+
+  .project-img {
+    width: 60vw;
+  }
+
+  .project-info {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translate(0);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 50%);
+    }
+  }
+
+  .project-title, .description, .tech-stack, .label, .project-links {
+    max-width: 50vw;
+  }
+
+  .left-arrow {
+    transform: translateX(-20vw);
+  }
+
+  .right-arrow {
+    transform: translateX(20vw);
+  }
+}
+
+@media (min-width: 441px) and (max-width: 912px){
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 96%;
+    background-color: var(--bg-color);
+    opacity: 0.8;
+    border: 5px solid var(--font-color1);
+    border-radius: 5px;
+  }
+
+  .project-img {
+    width: 50vw;
+  }
+  .project-info {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translate(0);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 50%);
+    }
+  }
+
+  .project-title, .description, .tech-stack, .label, .project-links {
+    max-width: 40vw;;
+  }
+
+  .left-arrow {
+    transform: translateX(-12vw);
+  }
+
+  .right-arrow {
+    transform: translateX(12vw);
+  }
 }
