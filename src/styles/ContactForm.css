@@ -12,7 +12,7 @@ input {
   padding: 7px;
   outline: none;
   border-radius: 5px;
-  border: 1px solid rgb(220, 220, 220);
+  border: 2px solid var(--font-color1);
 
   &:focus {
     border: 2px solid var(--font-highlight);
@@ -28,7 +28,7 @@ textarea {
   padding: 7px;
   outline: none;
   border-radius: 5px;
-  border: 1px solid rgb(220, 220, 220);
+  border: 2px solid var(--font-color1);
 
   &:focus {
     border: 2px solid var(--font-highlight);
@@ -43,8 +43,9 @@ input[type="submit"] {
   margin-top: 2rem;
   cursor: pointer;
   background: var(--accent-color);
-  color: white;
-  border: none;
+  color: var(--font-color1);
+  border: 2px solid var(--font-color1);
+  font-weight: bold;
 }
 
 @media (max-width: 800px) {

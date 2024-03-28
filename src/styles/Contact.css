@@ -25,7 +25,7 @@
   border: 3px solid var(--font-color1);
   border-radius: 8px;
   padding: 1.5rem;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color1);
 }
 
 .button-container {
