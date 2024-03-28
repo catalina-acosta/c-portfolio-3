@@ -36,7 +36,7 @@
   text-align: center;
   padding: 2vh 0;
   transform: translateX(2vw) translateY(3vh);
-  animation: slideIn 1.5s ease-in-out forwards;
+  animation: slideInAbout 1.5s ease-in-out forwards;
 }
 
 .about-text {
@@ -57,7 +57,7 @@
   letter-spacing: 0.3px;
 }
 
-@keyframes slideIn {
+@keyframes slideInAbout {
   from {
     opacity: 0;
     transform: translate(-50vw, 3vh);
@@ -79,7 +79,7 @@
   .title-small-d {
     display: block;
     font-size: 58px;
-    padding-top: 2rem;
+    padding-top: 4rem;
   }
 
   .img-title {

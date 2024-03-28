@@ -5,17 +5,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 5vh 2vw;
-}
-
-.socialmedia a {
-  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
-}
-
-.socialMedia svg {
-  color: var(--font-color2);
-  margin: 20px;
-  font-size: 70px;
-  cursor: pointer;
+  border-top: 3px solid var(--font-color1)
 }
 
 .footer p {
@@ -24,27 +14,14 @@
   font-size: 12px;
 }
 
+.footer svg {
+  font-size: 36px;
+  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
+}
+
 @media only screen and (max-width: 600px) {
   .footer svg {
     font-size: 36px;
   }
-
-  .footer {
-    height: 80px;
-    background: var(--background-color);
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-}
-
-@media (max-width: 800px) {
-}
-
-@media (max-width: 400px) {
-
 
 }

@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className='footer'>
       <p> built by catalina acosta rivera 2024 </p>
-      <button><a href='#home' rel='button up'><FontAwesomeIcon icon={faAngleUp} /></a></button>
+      <a href='#home' rel='button up'><FontAwesomeIcon icon={faAngleUp} /></a>
     </div>
   );
 }

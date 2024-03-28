@@ -49,6 +49,6 @@ input[type="submit"] {
 
 @media (max-width: 800px) {
   form {
-    width: 80vw;
+    width: 55vw;
   }
 }

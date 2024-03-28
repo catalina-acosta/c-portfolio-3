@@ -7,12 +7,12 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 function Contact() {
   return (
     <div className='contact' id='contact'>
-      <div className='contact-container'>
-        <h1 className='contact-title'>let's chat!</h1>
-        <ContactForm/>
-      </div>
-      <div className="button-container">
-          <button>
+      <h1 className='contact-title'>contact.</h1>
+      <div className="contact-container">
+        <div className='contact-form-container'>
+          <ContactForm/>
+        </div>
+        <div className="button-container">
             <a
               href='https://github.com/catalina-acosta'
               target='_blank'
@@ -20,8 +20,6 @@ function Contact() {
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>
-          </button>
-          <button>
             <a
               href='https://www.linkedin.com/in/catalina-acosta-rivera/'
               target='_blank'
@@ -29,8 +27,8 @@ function Contact() {
             >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
-          </button>
         </div>
+      </div>
     </div>
   )
 }

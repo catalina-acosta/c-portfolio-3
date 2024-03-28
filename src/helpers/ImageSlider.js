@@ -4,7 +4,6 @@ import '../styles/ImageSlider.css';
 function ImageSlider(props) {
   const { slides } = props;
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;

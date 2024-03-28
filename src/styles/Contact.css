@@ -6,20 +6,62 @@
   align-items: center;
   justify-content: center;
 }
+.contact-title {
+  font-size: 68px;
+  padding-top: 14vh;
+  padding-bottom: 1rem;
+}
 
 .contact-container {
+  display: flex;
+  gap: 2rem;
+  transform: translateX(2rem);
+}
+
+.contact-form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 3px solid var(--font-color1);
   border-radius: 8px;
-  padding: 2rem;
-  margin-top: 5rem;
+  padding: 1.5rem;
   background-color: var(--bg-color);
 }
 
 .button-container {
   padding-top: 5vh;
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container svg {
+  cursor: url("../assets/svg/hand-pointer-solid.svg"), auto;
+  font-size: 38px;
+}
+
+.button-container svg:hover {
+  scale: 1.1;
+}
+
+@media (max-width: 800px) {
+  .contact-title {
+    font-size: 58px;
+    padding-top: 4rem;
+  }
+
+  .contact-container {
+    transform: translateX(0);
+    flex-direction: column;
+    gap: 0;
+  }
+  .button-container {
+    flex-direction: row;
+  }
+
+  .button-container button {
+    font-size: 18px;
+  }
 }
