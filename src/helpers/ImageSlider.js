@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/ImageSlider.css';
 
 function ImageSlider(props) {
@@ -6,6 +6,18 @@ function ImageSlider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showOverlay, setShowOverlay] = useState(false);
   const [showProjectInfo, setShowProjectInfo] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -25,9 +37,9 @@ function ImageSlider(props) {
 
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
-    setShowOverlay(false); 
+    setShowOverlay(false);
     setShowProjectInfo(false);
-  }
+  };
 
   const toggleOverlay = () => {
     setShowOverlay(!showOverlay);
@@ -54,9 +66,9 @@ function ImageSlider(props) {
                     <span className='dot'></span>
                   </div>
                 </div>
-                <div className="project-img-container" onClick={toggleOverlay}>
+                <div className="project-img-container" onClick={isSmallScreen ? toggleOverlay : undefined}>
                   {showOverlay && <div className="overlay"></div>}
-                  {(window.innerWidth <= 768 && showOverlay) || window.innerWidth > 768 ? (
+                  {(isSmallScreen && showOverlay) || !isSmallScreen ? (
                     <div className='project-info'>
                       <div className='project-title'><h1>{slides[currentIndex].title}</h1></div>
                       <div className="description"><p>{slides[currentIndex].description}</p></div>

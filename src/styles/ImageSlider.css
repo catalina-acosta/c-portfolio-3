@@ -132,19 +132,19 @@
 }
 
 .project-title {
-  animation-delay: 0.1s; /* Adjust delay for each element */
+  animation-delay: 0.5s; /* Adjust delay for each element */
 }
 
 .description {
-  animation-delay: 0.5s;
-}
-
-.tech-stack {
   animation-delay: 1s;
 }
 
-.label {
+.tech-stack {
   animation-delay: 1.5s;
+}
+
+.label {
+  animation-delay: 2s;
 }
 
 .nav-dots {
