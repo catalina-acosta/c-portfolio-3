@@ -13,6 +13,8 @@
   gap: 5vw;
 }
 
+
+
 .title-small-d {
   display: none;
 }
@@ -76,10 +78,16 @@
     padding: 0;
   }
 
+  .about-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .title-small-d {
     display: block;
     font-size: 58px;
-    padding-top: 4rem;
+    padding-top: 12vh;
   }
 
   .img-title {
@@ -87,7 +95,7 @@
   }
 
   .img-container {
-    max-width: 40vw;
+    max-width: 35vw;
     margin: 1rem 0;
     border: 5px 5px;
   }
@@ -101,7 +109,7 @@
     display: none;
   }
   .about-text p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
