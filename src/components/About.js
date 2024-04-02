@@ -1,14 +1,37 @@
-import React from 'react'
-import "../styles/About.css"
-import aboutImg from '../assets/img/about-pic.jpg'
+import React, { useEffect, useState } from 'react';
+import "../styles/About.css";
+import aboutImg from '../assets/img/about-pic.jpg';
 
 function About() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const aboutSection = document.getElementById('about');
+      if (!aboutSection) return;
+
+      const { top, bottom } = aboutSection.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (top < windowHeight && bottom >= 0) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="about" id='about'>
+    <div className={`about ${isVisible ? 'visible' : ''}`} id='about'>
       <div className="about-container">
         <div className="about-left">
           <h1 className='title-small-d'>about.</h1>
-          <div className="img-title">this is me</div>
+          <div className={`img-title ${isVisible ? 'animate-img' : ''}`}>this is me</div>
           <div className="img-container">
             <img src={aboutImg} alt="Catalina" />
           </div>
@@ -21,7 +44,7 @@ function About() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default About
+export default About;

@@ -11,22 +11,22 @@ function ImageSlider(props) {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
-    setShowOverlay(false); // Reset overlay visibility
-    setShowProjectInfo(false); // Reset project info visibility
+    setShowOverlay(false);
+    setShowProjectInfo(false);
   };
 
   const goToNext = () => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-    setShowOverlay(false); // Reset overlay visibility
-    setShowProjectInfo(false); // Reset project info visibility
+    setShowOverlay(false);
+    setShowProjectInfo(false);
   };
 
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
-    setShowOverlay(false); // Reset overlay visibility
-    setShowProjectInfo(false); // Reset project info visibility
+    setShowOverlay(false); 
+    setShowProjectInfo(false);
   }
 
   const toggleOverlay = () => {
