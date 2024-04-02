@@ -1,6 +1,7 @@
 import jescobarImg from '../assets/img/Jescobardesign.jpg';
 import fmmwImg from '../assets/img/FMMW.jpg';
 import cPorfolio1 from '../assets/img/c-acosta1.jpg';
+import cPorfolio2 from '../assets/img/c-acosta2.jpg';
 
 export const ProjectList = [
   {
@@ -23,7 +24,7 @@ export const ProjectList = [
     name: "personal porfolio V.2.",
     description: "the newest version of my personal porfolio",
     techStack: ["React Js |", " JavaScript |", " CSS |", " HTML"],
-    img: cPorfolio1,
+    img: cPorfolio2,
     git: "https://github.com/catalina-acosta/c-portfolio-3"
 
   },
