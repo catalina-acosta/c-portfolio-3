@@ -256,3 +256,8 @@
     transform: translateX(12vw);
   }
 }
+@media (min-width: 913px) and (max-width: 1025px){
+  .project-info {
+    transform: translate(0, -3rem);
+  }
+}
