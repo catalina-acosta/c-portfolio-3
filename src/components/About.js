@@ -31,9 +31,11 @@ function About() {
       <div className="about-container">
         <div className="about-left">
           <h1 className='title-small-d'>about.</h1>
-          <div className={`img-title ${isVisible ? 'animate-img' : ''}`}>this is me</div>
-          <div className="img-container">
-            <img src={aboutImg} alt="Catalina" />
+          <div className="img-section">
+            <div className="img-container">
+              <img src={aboutImg} alt="Catalina" />
+            </div>
+            <div className={`img-title ${isVisible ? 'animate-img' : ''}`}>this is me</div>
           </div>
         </div>
         <div className="about-text">

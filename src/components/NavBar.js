@@ -14,6 +14,10 @@ function NavBar() {
     setExpandNavbar(false);
   }
 
+  const handleLogoClick = () => {
+    setExpandNavbar(false);
+  }
+
   return (
 
     <div className="navbar">
@@ -27,7 +31,7 @@ function NavBar() {
           <li><HashLink to='#contact' onClick={handleLinkClick}>contact</HashLink></li>
         </ul>
         <div className="logo-container">
-          <HashLink to='#home' id="logo"> c.</HashLink>
+          <HashLink to='#home' id="logo" onClick={handleLogoClick}> c.</HashLink>
         </div>
       </Router>
     </div>

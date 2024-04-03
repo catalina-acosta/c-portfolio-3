@@ -10,7 +10,7 @@ function ImageSlider(props) {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 768);
+      setIsSmallScreen(window.innerWidth <= 820);
     };
 
     window.addEventListener('resize', handleResize);
@@ -88,7 +88,7 @@ function ImageSlider(props) {
                       </div>
                     </div>
                   ) : null}
-                  <img src={slides[currentIndex].image} alt="" className='project-img'/>
+                  <img src={slides[currentIndex].image} alt="" className='project-img' loading="lazy"/>
                 </div>
               </div>
             </div>
