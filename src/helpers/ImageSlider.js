@@ -56,41 +56,37 @@ function ImageSlider(props) {
           ❱
         </div>
         <div className="slide-container">
-          <div className="slide">
-            <div className="project-left">
-              <div className="graphic">
-                <div className="top-container">
-                  <div className='graphic-points'>
-                    <span className='dot'></span>
-                    <span className='dot'></span>
-                    <span className='dot'></span>
+          <div className="graphic">
+            <div className="top-container">
+              <div className='graphic-points'>
+                <span className='dot'></span>
+                <span className='dot'></span>
+                <span className='dot'></span>
+              </div>
+            </div>
+            <div className="project-img-container" onClick={isSmallScreen ? toggleOverlay : undefined}>
+              {showOverlay && <div className="overlay"></div>}
+              {(isSmallScreen && showOverlay) || !isSmallScreen ? (
+                <div className='project-info'>
+                  <div className='project-title'><h1>{slides[currentIndex].title}</h1></div>
+                  <div className="description"><p>{slides[currentIndex].description}</p></div>
+                  <div className="tech-stack"><p>{slides[currentIndex].techStack}</p></div>
+                  <div className="label"><p>{slides[currentIndex].label}</p></div>
+                  <div className="project-links">
+                    {slides[currentIndex].git && (
+                      <a href={slides[currentIndex].git} target='_blank' rel='noopener noreferrer'>
+                        <p>git</p>
+                      </a>
+                    )}
+                    {slides[currentIndex].link && (
+                      <a href={slides[currentIndex].link} target='_blank' rel='noopener noreferrer'>
+                        <p>visit</p>
+                      </a>
+                    )}
                   </div>
                 </div>
-                <div className="project-img-container" onClick={isSmallScreen ? toggleOverlay : undefined}>
-                  {showOverlay && <div className="overlay"></div>}
-                  {(isSmallScreen && showOverlay) || !isSmallScreen ? (
-                    <div className='project-info'>
-                      <div className='project-title'><h1>{slides[currentIndex].title}</h1></div>
-                      <div className="description"><p>{slides[currentIndex].description}</p></div>
-                      <div className="tech-stack"><p>{slides[currentIndex].techStack}</p></div>
-                      <div className="label"><p>{slides[currentIndex].label}</p></div>
-                      <div className="project-links">
-                        {slides[currentIndex].git && (
-                          <a href={slides[currentIndex].git} target='_blank' rel='noopener noreferrer'>
-                            <p>git</p>
-                          </a>
-                        )}
-                        {slides[currentIndex].link && (
-                          <a href={slides[currentIndex].link} target='_blank' rel='noopener noreferrer'>
-                            <p>visit</p>
-                          </a>
-                        )}
-                      </div>
-                    </div>
-                  ) : null}
-                  <img src={slides[currentIndex].image} alt="" className='project-img' loading="lazy"/>
-                </div>
-              </div>
+              ) : null}
+              <img src={slides[currentIndex].image} alt="" className='project-img' loading="lazy"/>
             </div>
           </div>
         </div>

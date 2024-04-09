@@ -35,7 +35,7 @@ function About() {
             <div className="img-container">
               <img src={aboutImg} alt="Catalina" />
             </div>
-            <div className={`img-title ${isVisible ? 'animate-img' : ''}`}>this is me</div>
+            <div className={`img-title ${isVisible ? 'animate-img' : ''}`}>this is me!</div>
           </div>
         </div>
         <div className="about-text">

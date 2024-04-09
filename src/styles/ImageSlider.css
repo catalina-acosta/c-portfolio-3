@@ -16,12 +16,6 @@
   transition: transform 0.3s ease-in-out; /* Add transition */
 }
 
-.slide {
-  height: 100%;
-  border-radius: 10px;
-  background-position: center;
-}
-
 .left-arrow {
   position: absolute;
   top: 50%;
@@ -78,9 +72,16 @@
   color: var(--bg-color);
 }
 
-/*image styling*/
-.project-img {
+.project-img-container {
+  position: relative;
   width: 15vw;
+  height: 100%;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .overlay {
@@ -173,7 +174,7 @@
     border-radius: 5px;
   }
 
-  .project-img {
+  .project-img-container {
     width: 60vw;
   }
 
@@ -222,7 +223,7 @@
     border-radius: 5px;
   }
 
-  .project-img {
+  .project-img-container {
     width: 50vw;
   }
   .project-info {
