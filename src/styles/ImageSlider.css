@@ -147,6 +147,7 @@
 .label {
   animation-delay: 2s;
   font-weight: bolder;
+  text-decoration: underline;
 }
 
 .nav-dots {
