@@ -1,11 +1,10 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import "../styles/ContactForm.css"
-import Modal from './Modal'
+import "../styles/ContactForm.css";
+import Modal from './Modal';
 
 const ContactForm = () => {
   const form = useRef();
-
   const [openModal, setOpenModal] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -27,11 +26,12 @@ const ContactForm = () => {
     emailjs.sendForm('service_d6yvvsu', 'template_8ebvz37', form.current, 'CT5blvDack2_s7xqK')
       .then((result) => {
           console.log(result.text);
-          console.log("message sent");
+          console.log("Message sent");
           setOpenModal(true); // Open the modal after sending the email
           clearFormFields(); // Clear form fields after sending the email
       }, (error) => {
-          console.log(error.text);
+          console.error("Failed to send email: ", error);
+          alert('Failed to send message, please try again later.');
       });
   };
 
@@ -47,33 +47,35 @@ const ContactForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input
-        type="text"
-        name="user_name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        required
-      />
-      <label>Email</label>
-      <input
-        type="email"
-        name="user_email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-      <label>Message</label>
-      <textarea
-        name="message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        required
-      />
-      <input id='btn-submit'className="openModalBtn" type="submit" value="Send" />
-      {openModal && <Modal closeModal={() => setOpenModal(false)} />}
-    </form>
+    <>
+      <form ref={form} onSubmit={sendEmail}>
+        <label>Name</label>
+        <input
+          type="text"
+          name="user_name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+        <label>Email</label>
+        <input
+          type="email"
+          name="user_email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <label>Message</label>
+        <textarea
+          name="message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          required
+        />
+        <input id='btn-submit' className="openModalBtn" type="submit" value="Send" />
+      </form>
+      {openModal && <Modal closeModal={setOpenModal} />} {/* Modal is rendered outside of the form */}
+    </>
   );
 }
 
